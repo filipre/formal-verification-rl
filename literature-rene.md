@@ -63,6 +63,11 @@
     - "Safety Verification of Deep Neural Networks" Marta Kwiatkowska | CAV 2017
     - 1h
     - **reference to Autonoumous driving**
+    - https://www.youtube.com/channel/UCe3M4Hc2hCeNGk54Dcbrbpw **<-- very nice**
+
+- https://nfulton.org/papers/aaai18.pdf
+    - Safe Reinforcement Learning via Formal Methods; Toward Safe Control Through Proof and Learning
+    - aaai18
 
 ## Reinforcement Learning
 
@@ -76,11 +81,12 @@
 - which direction do we want to go?
     - focus on DNN
     - focus on MDP
-    - Formal vs. Probabilistic Verification?
-    - Which RL Algorithm should we focus on? Tabular-Learning (easy?), DQN (very hard)
-    - Should we link it with Autonoumous driving (only very lightly)
-    - can we make similar statemens like in DNN: "When being in this neighborhood, we don't have ..."
-    - Include Software?
-    - Decidable vs. Undecidable.
-    - Survey or Research?
-    - Overcome NP Complete Verification Problem
+- Formal vs. Probabilistic Verification?
+- Which RL Algorithm should we focus on? Tabular-Learning (easy?), DQN (very hard)
+- Should we link it with Autonoumous driving (only very lightly)
+- can we make similar statemens like in DNN: "When being in this neighborhood, we don't have ..."
+- Decidable vs. Undecidable.
+- Survey or Research?
+- Formal Verification of an already trained model?
+- Or formal verificatiaon that a model can learn actually learn? Convergence Rate?
+- Formal Verification of Algorithms or Implementations? (Algorithms, right?)
