@@ -63,6 +63,9 @@
     - "Safety Verification of Deep Neural Networks" Marta Kwiatkowska | CAV 2017
     - 1h
     - **reference to Autonoumous driving**
+    - references to SMT (Z3)
+    - verification for a **given** image and a **given** network. Then show "most" extreme picture that makes it fail or not
+    - unclear which neighborhood to choose from (they focused on "natural" pertubations?)
     - https://www.youtube.com/channel/UCe3M4Hc2hCeNGk54Dcbrbpw **<-- very nice**
 
 - https://nfulton.org/papers/aaai18.pdf
@@ -76,8 +79,23 @@
     - 2k claps
     - very short, not 100% clear
 
+## Classical Formal Verification (SAT, SMT)
+
+- https://yurichev.com/writings/SAT_SMT_draft-EN.pdf
+    - many examples how to solve problems using SMT.
+    - context to verificataion: https://en.wikipedia.org/wiki/Satisfiability_modulo_theories#Verification
+    - A common technique is to translate preconditions, postconditions, loop conditions, and assertions into SMT formulas in order to determine if all properties can hold.
+    - "Another approach is deductive verification. It consists of generating from the system and its specifications (and possibly other annotations) a collection of mathematical proof obligations, the truth of which imply conformance of the system to its specification, and discharging these obligations using either interactive theorem provers (such as HOL, ACL2, Isabelle, Coq or PVS), automatic theorem provers, or satisfiability modulo theories (SMT) solvers. This approach has the disadvantage that it typically requires the user to understand in detail why the system works correctly, and to convey this information to the verification system, either in the form of a sequence of theorems to be proved or in the form of specifications of system components (e.g. functions or procedures) and perhaps subcomponents (such as loops or data structures)." Wikipedia Formal Verification
+
+- https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/nbjorner-smt-application-chapter.pdf
+    - how to use SMT for program verification
+    - is this related to us? Do we care about the "implementation", about the algorithms or about the probability model?
+
 ## Questions:
 
+- what does "formal verification" mean? define neighborhood of a point and see how it ends up?
+- Do we care about the "implementation", about the algorithms or about the probability model?
+- include program verification? or just model verification? (theory vs. implementation)
 - which direction do we want to go?
     - focus on DNN
     - focus on MDP
