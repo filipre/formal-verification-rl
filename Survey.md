@@ -121,6 +121,37 @@ JSCGeneric(init, (S,A,R,E), choose, update, done, CM, MM) {
 - another: adopts worst case criterion (Heger 1994) or risk-sensitive criterion (Tamar, Xu, and Mannor 2013; Nilim and Ghaoui 2005), in which the optimization criterion is modified to re- flect safety concerns.
 - analysis of the policy constructed from a learning process (Katz et al. 2017). These approaches are appropriate when the learning phase is not safety-critical, but not appropriate when the system must behave safely while learning.
 
+
+# A Comprehensive Survey on Safe Reinforcement Learning
+
+- Safe RL
+  - Optimization Criterion
+    - Worst Case Criterion
+      - due to inherent uncertainty [...] and parameter uncertainty [...]
+    - Risk Sensitive Criterion
+    - Constrained Criterion
+    - Other Optimization Criteria
+  - Exploration Process
+    - External Knowledge
+      - Providing Initial Knowledge
+      - Deriving a Policy from Demonstrations
+      - Teacher Advice
+    - Risk-directed Exploration
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # General Notes
 
 ## Problems:
