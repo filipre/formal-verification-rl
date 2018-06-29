@@ -42,6 +42,22 @@ Verification of Markov Decision Processes using Learning Algorithms
 - Thrun [41]: This method propagates bounds on input variables through the network to produce a bound on the output variable(s)
 - Katz et al. [24]: suggests a method to extend SMT solvers, allowing for the verification of constraints on deep neural networks.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Safe Model-based Reinforcement Learning with Stability Guarantees
 
 - intermediate policies may be unsafe, break the system, or harm their environment.
@@ -64,14 +80,28 @@ Lyapunov function To satisfy the specified safety constraints for safe learning,
 - **fixed control theory**: In control, stability of a known system can be verified using a Lyapunov function [27], ...
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Safe Reinforcement Learning via Formal Methods
 
 - even the best models are incomplete.
-- best of both worlds: the exploration and op- timization capabilities of learning along with the safety guar- antees of formal verification.
+- best of both worlds: the exploration and optimization capabilities of learning along with the safety guarantees of formal verification.
 - runtime monitoring
 - When a model violation is detected, the agent abandons ef- ficiency and instead attempts to learn a control strategy that guides the agent to a modeled portion of the state space.
 - Justified Speculative Control (JSC): combines verified runtime monitoring – backed by formally verified models – with reinforcement learning.
-    - no modeling inaccuracy: actions are constrained to a set of veri- fied control actions
+    - no modeling inaccuracy: actions are constrained to a set of verified control actions
     - modeling inaccuracy is detected: system is justified in taking actions that are unverified and possibly unsafe with respect to the (inaccurate) model.
 - Verification results establish the safety of a set of actions, but do not solve the optimization problem
 - usage of KeYmaera X (Fulton et al. 2015) for differential dynamic logic (Platzer 2008; 2012b; 2012a; 2017) to verify the CPS controller for its model.
@@ -120,6 +150,19 @@ JSCGeneric(init, (S,A,R,E), choose, update, done, CM, MM) {
 - the agent may only choose from a set of control actions that are a priori known to be safe (Garc ́ıa and Ferna ́ndez 2015). There are several approaches with this ba- sic flavor (Kadota, Kurano, and Yasuda 2006; Geibel 2006; Moldovan and Abbeel 2012).
 - another: adopts worst case criterion (Heger 1994) or risk-sensitive criterion (Tamar, Xu, and Mannor 2013; Nilim and Ghaoui 2005), in which the optimization criterion is modified to re- flect safety concerns.
 - analysis of the policy constructed from a learning process (Katz et al. 2017). These approaches are appropriate when the learning phase is not safety-critical, but not appropriate when the system must behave safely while learning.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # A Comprehensive Survey on Safe Reinforcement Learning
