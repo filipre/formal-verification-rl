@@ -147,7 +147,7 @@ JSCGeneric(init, (S,A,R,E), choose, update, done, CM, MM) {
 - There are a myriad of approaches toward safe reinforce- ment learning that do not take advantage of formal verifica- tion. Many of these approaches are summarized in (Garc ́ıa and Ferna ́ndez 2015),
   - modification of the optimality criterion
   - modification of the exploration process.
-- the agent may only choose from a set of control actions that are a priori known to be safe (Garc ́ıa and Ferna ́ndez 2015). There are several approaches with this ba- sic flavor (Kadota, Kurano, and Yasuda 2006; Geibel 2006; Moldovan and Abbeel 2012).
+- the agent may only choose from a set of control actions that are a priori known to be safe (Garcıa and Fernandez 2015). There are several approaches with this basic flavor (Kadota, Kurano, and Yasuda 2006; Geibel 2006; Moldovan and Abbeel 2012).
 - another: adopts worst case criterion (Heger 1994) or risk-sensitive criterion (Tamar, Xu, and Mannor 2013; Nilim and Ghaoui 2005), in which the optimization criterion is modified to re- flect safety concerns.
 - analysis of the policy constructed from a learning process (Katz et al. 2017). These approaches are appropriate when the learning phase is not safety-critical, but not appropriate when the system must behave safely while learning.
 
